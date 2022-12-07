@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>글 작성됨</h1>
+<p>작성 내용: {{ content }}</p>
+<!-- <a href="/articles/"> 방명록 </a> -->
+<a href="{% url 'articles:index' %}"> 방명록 돌아가기</a>
+{% endblock %}
